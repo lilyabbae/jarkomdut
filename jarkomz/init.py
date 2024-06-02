@@ -2,8 +2,7 @@ import socket
 import threading
 import os
 
-port = 3000
-address = ("127.0.0.1", port)
+address = ("127.0.0.1", 3000)
 sockets = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sockets.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 sockets.bind(address)
