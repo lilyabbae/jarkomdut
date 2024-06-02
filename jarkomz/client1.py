@@ -16,5 +16,5 @@ while path != ' ' :
 
     print(response.read().decode())
 
-connconnection.close()
+connection.close()
 print("Connection to server closed")
