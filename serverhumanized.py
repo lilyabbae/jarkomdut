@@ -83,5 +83,5 @@ def serve():
         thread = threading.Thread(target=handle_client, args=(client_socket,))
         thread.start()  # Memulai thread baru untuk menangani klien
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     serve()  # Menjalankan server
