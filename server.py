@@ -11,11 +11,12 @@ sockets.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 sockets.bind(address)
 sockets.listen(1)
 
+#ngebaca isi html
 def read_file(path):
     """Read the content of the file at the given path."""
     with open(path, "r") as file:
         return file.read()
-
+#untuk negbentuk path dari index html
 def normalize_path(path):
     """Normalize the requested path to serve the correct file."""
     path = f".{path}"
@@ -27,7 +28,7 @@ def normalize_path(path):
         path += "/index.html"
 
     return path
-
+#output ke client
 def handle_client(csock):
     """Handle the client connection."""
     try:
