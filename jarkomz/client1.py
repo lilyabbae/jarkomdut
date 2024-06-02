@@ -1,7 +1,7 @@
 import http.client
 
-IP =input("Enter IP server: ")
-Port=input("Enter Port server: ")
+IP = input("Enter IP server: ")
+Port = input("Enter Port server: ")
 connection = http.client.HTTPConnection(IP, Port)
 
 path = input("Enter path or leave blank to quit : ")
