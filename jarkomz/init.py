@@ -42,6 +42,6 @@ def serve():
         csock.send(f"HTTP/1.1 200 OK\n\n{content}\r\n".encode())
         csock.close()
 
-for _ in range(3):
-    thread = threading.Thread(target=serve, args=[])
-    thread.start()
+    for _ in range(3):
+        thread = threading.Thread(target=serve, args=[])
+        thread.start()
